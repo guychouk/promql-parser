@@ -1,0 +1,31 @@
+{
+  "name": "promql-parser",
+  "description": "Parses PromQL to an AST",
+  "version": "0.0.1",
+  "author": "kutacoder",
+  "homepage": "https://github.com/kutacoder/promql-parser",
+  "bugs": "https://github.com/kutacoder/promql-parser/issues",
+  "keywords": [
+    "prometheus",
+    "peg.js",
+    "ast",
+    "parser",
+    "promql"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/kutacoder/promql-parser.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "node test/promql-parser.test.js",
+    "generate": "pegjs lib/promql.pegjs"
+  },
+  "engines": {
+    "node": ">=12.18.4"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "pegjs": "0.10.0"
+  }
+}
